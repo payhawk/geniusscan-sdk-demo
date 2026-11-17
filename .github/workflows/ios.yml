@@ -9,7 +9,7 @@ jobs:
       run:
         working-directory: ios/GSSDKCustomDemo
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@0717577d45739eb3c851188b29f50ed6c0b2194e # v2
     - run: pod install
     - run: xcodebuild build -scheme GSSDKCustomDemo -workspace GSSDKCustomDemo.xcworkspace -configuration Debug -sdk iphoneos \
            ONLY_ACTIVE_ARCH=YES \
@@ -20,7 +20,7 @@ jobs:
       run:
         working-directory: ios/GSSDKSimpleDemo
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@0717577d45739eb3c851188b29f50ed6c0b2194e # v2
     - run: pod install
     - run: xcodebuild build -scheme GSSDKSimpleDemo -workspace GSSDKSimpleDemo.xcworkspace -configuration Debug -sdk iphoneos \
            ONLY_ACTIVE_ARCH=YES \
